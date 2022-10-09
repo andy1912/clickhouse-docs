@@ -1,74 +1,18 @@
+
 RocketBI is a self-service Business Intelligence platform that helps you quickly analyze, drag and drop to visualize Big Data, and collaborate with friends & colleagues right on your web browser.
 
-# Usecase: Metrics & Date range controller
+# GOAL
 
-In this guide, you will build a dashboard in Rocket.BI with a metrics controller & a date range trigger. Then use them inside the chart to enable a dynamic report of different KPIs & DateTime view with one Dashboard. This is the dashboard:
+In this guide, you will install and build a simple dashboard using Rocket.BI.
+This is the dashboard:
 
-<img src={require('./images/rocketbi_chart_1.png').default} class="image" alt="Sample Dashboard" />
-<p/>
+![rocketbi_chart_1](https://user-images.githubusercontent.com/91059979/194484388-1e74c8cd-64e0-4768-8d78-2ee7a37bba5c.png)
 
-## 1. Create Controllers
- 
-### 1.1 Metrics:
-#### Add a Tab filter chart
-<img src={require('./images/rocketbi_chart_2.png').default} class="image" alt="Add Tab Filter" />
-<p/>
+## INSTALL
 
-#### Select relevant Metric fields with the desired aggregation.
-<img src={require('./images/rocketbi_chart_3.png').default} class="image" alt="Create Metric Control" />
-<p/>
+Before we go deeper in create an advance dashboard with Rocket.BI, making sure you have rocket.bi platform on your ClickHouse server and the data is connected & up-to-date. Here are the step by step guide on the configuration:
 
-#### Rename & Save Control to Dashboard
-
-### 1.2 Date control:
-#### Again, add a Tab filter chart
-
-#### Select Main Date Column as a filter.
-<img src={require('./images/rocketbi_chart_5.png').default} class="image" alt="Choose a field to usse as Main Date" />
-<p/>
-
-#### Add duplicate variants with different lookup ranges. For example, Year, Monthly, Daily date or Day of Week.
-<img src={require('./images/rocketbi_chart_6.png').default} class="image" alt="Create Date type Control" />
-<p/>
-
-#### Rename filters & Save Control to Dashboard
-
-
-## 2. Using Control in Chart
-
-#### Add a Column chart
-<img src={require('./images/rocketbi_chart_7.png').default} class="image" alt="Add Column Chart" />
-<p/>
-
-#### Select Date control as DateTime or X-Axis filter.
-<img src={require('./images/rocketbi_chart_8.png').default} class="image" alt="Use Date control" />
-<p/>
-
-#### Select Metrics control as Metric fields or Y-Axis filter.
-<img src={require('./images/rocketbi_chart_9.png').default} class="image" alt="Use Metrics control" />
-<p/>
-
-#### Rename & Save Chart to Dashboard
-
-
-## 3. Trigger Control to change Chart view
-#### Default View
-<img src={require('./images/rocketbi_chart_10.png').default} class="image" alt="Default Chart" />
-<p/>
-
-#### Choose different Metric
-<img src={require('./images/rocketbi_chart_9.png').default} class="image" alt="Select another Metric" />
-<p/>
-
-#### Choose different Date type
-<img src={require('./images/rocketbi_chart_9.png').default} class="image" alt="Change Date presentation" />
-<p/>
-
-# Get Rocket.BI for your system
-
-Since RocketBI is ClickHouse native and an open-source project, all you need is an already deployed ClickHouse database, using Docker and follow these 3 simple steps:
- 
-## 1. Installation
+### 1. Setting up Rocket.BI
 
 Prerequisites:
 docker-engine 19.0+
@@ -80,8 +24,7 @@ wget https://raw.githubusercontent.com/datainsider-co/rocket-bi/main/docker/dock
 
 wget https://raw.githubusercontent.com/datainsider-co/rocket-bi/main/docker/.clickhouse.env
 ````
-
-## 2. Config your ClickHouse information
+### 2. Config your ClickHouse information
  
 Edit `.clickhouse.env` with your ClickHouse server's host, port, username, password and cluster name.
  
@@ -92,105 +35,85 @@ Start RocketBI with the command:
 docker-compose up -d
 ```
 
-## 3. Start exploring your data
+### 3. Start exploring your data
  
 Open the browser and go to localhost:5050 to enter the web UI.
  
 Login to RocketBI with this default account:
-`username: hello@gmail.com
-`password: 123456
+```
+username: hello@gmail.com
+password: 123456
+```
 
 #### You will find your ClickHouse data in the tab Data Warehouse > Schemas.
 
 #### Check if your dataset is connected in Settings > Organization Settings:
-<img src={require('./images/rocketbi_config_1.png').default} class="image" alt="Data Sync Status" />
-<p/>
+
+<img width="800" alt="rocketbi_config_1" src="https://user-images.githubusercontent.com/91059979/194485090-46ce0c18-00af-46af-967b-e886df93362e.png">
 
 #### Use Query Analysis to quickly explore data & do ad hoc insight finding:
-<img src={require('./images/rocketbi_analyze_1.png').default} class="image" alt="Rocket.BI Chart Builder" />
-<p/>
+
+![rocketbi_analyze_1](https://user-images.githubusercontent.com/91059979/194485149-c8ca745c-2bbc-43bd-b990-f146bd08b15a.png)
 
 #### Or visualize your data through our Chart builder in the Dashboard tab:
-<img src={require('./images/rocketbi_analyze_2.gif').default} class="image" alt="Rocket.BI Chart Builder" />
-<p/>
- 
-# Contribute to the project:
 
-If you use & love RocketBI, and want to provide your expertise to help enrich the product. Please go to our [RocketBI GitHub](https://github.com/datainsider-co/rocket-bi/blob/main/README.md) document to learn more about our infrastructure and how you can commit.
+![rocketbi_analyze_2](https://user-images.githubusercontent.com/91059979/194485209-d1f4c308-8900-4017-a820-ad6bb9d7d8f1.gif)
 
-
-# Get data insights in seconds
- 
-This section will guide you through the simple process to quickly explore and build an insightful report with Rocket.BI
- 
-## 1. Explore dataset schemas
-
-Rocket.BI will automatically discover and sync all datasets in your ClickHouse DB. You can find them in Data Warehouse tab.
-
-Click the name of the database, you can access the Table Schema, Table Data, Measure Schema, Calculated Field, and RLS.
-
-Measure Schema & Calculated Field
-Fields created through mathematical functions & syntax will be shown here.
- 
-RLS - Row-level Security
-Setup and check your user-attributed-based data accessibility rule here.
-<img src={require('./images/rocketbi_row_level_security.png').default} class="image" alt="Create data access rule for each user group" />
-<p/>
-
-
-## 2. Time-saving Ad hoc Analysis with Query
-
-Not only can you deep-dive into the raw data with SQL, but also drag-and-drop the results into different charts & graphs for a better visual perspective.
-#### Write a SQL query
-<img src={require('./images/rocketbi_sql_query.png').default} class="image" alt="Ad hoc Query" />
-<p/>
-
-#### Visualize the result
-Click +Add chart to use the results to build a chart. A selection menu for visualization type will appear. Choose a chart to start:
-<img src={require('./images/rocketbi_visualization.png').default} class="image" alt="Build advanced visualized reports" />
-<p/>
-
-
-## 3. Chart builders with advanced customization
+## LET'S BUILD THE DASHBOARD
 
 In Dashboard tab, you will find your reportings there, start visualization by clicking +New
-You can build unlimited dashboards & draw unlimited charts in a dashboard.
 
-#### Create Dashboard & Add charts:
+<img width="400" alt="rocketbi_new_chart" src="https://user-images.githubusercontent.com/91059979/194486110-731d2fa6-85ff-4dbc-9849-487dc1ab9d16.png">
+
+You can build **unlimited dashboards** & draw **unlimited charts** in a dashboard.
+
+### Create the Chart Controls
+
+#### Basic Chart Setting
 If you create a chart in an empty dashboard, hit Click here to start.
-<img src={require('./images/rocketbi_create_chart_1.png').default} class="image" alt="Add First Charts" />
-<p/>
+<img width="800" alt="rocketbi_create_chart_1" src="https://user-images.githubusercontent.com/91059979/194486161-9a8e6fdf-b019-4602-b5a0-c63c008c96e0.png">
 
-If you create a chart from a filled dashboard, click Edit in the sidebar menu:
-<img src={require('./images/rocketbi_create_chart_2.png').default} class="image" alt="Edit the Dashboard" />
-<p/>
+If you create a chart from a filled dashboard, click Edit in the sidebar menu, then click Adding and select Add chart:
+<img width="400" alt="rocketbi_create_chart_2" src="https://user-images.githubusercontent.com/91059979/194486197-3d216af5-7748-4d0b-ae11-2a604b13bb44.png"> <img width="400" alt="rocketbi_create_chart_3" src="https://user-images.githubusercontent.com/91059979/194486231-452bd640-a320-4942-9a1c-7090ca1d5adf.png">
 
-Then click Adding and select Add chart.
-<img src={require('./images/rocketbi_create_chart_3.png').default} class="image" alt="Add New Charts" />
-<p/>
- 
-A selection menu for visualization type will appear just like in Query Analysis.
+A selection menu for visualization type will appear. Find and select a Tab filter.
+![rocketbi_chart_2](https://user-images.githubusercontent.com/91059979/194490118-4c876aa8-e3ff-4943-a0c4-edc8cdbc661c.png)
 
 
-#### Flexible Charts Configuration
-In the chart builder, look at the Settings button in the top right corner
-<img src={require('./images/rocketbi_chart_config_1.png').default} class="image" alt="Chart Settings" />
-<p/>
+#### Create a Metrics Control
+In the Tab filter setting, select the metric fields you want to use. Make sure to keep check on aggregation setting.
+![rocketbi_chart_6](https://user-images.githubusercontent.com/91059979/194493404-dd6199bc-2faf-4a73-b72e-a6370dc490f8.png)
 
-In the Dashboard Edit, use the Settings icon and select Config Chart.
-<img src={require('./images/rocketbi_chart_config_2.png').default} class="image" alt="Chart Configurations" />
-<p/>
+Rename filters & Save Control to Dashboard
 
-With each Chart type, the configuration might be different
-<img src={require('./images/rocketbi_chart_config_3.png').default} class="image" alt="Configuration Options" />
-<p/>
+<img width="400" alt="Screen Shot 2022-10-07 at 14 15 35" src="https://user-images.githubusercontent.com/91059979/194493738-c085fa53-173b-495a-b654-bffcd092b2e6.png">
 
 
-#### Powerful Dashboard Controllers
-Drag to zoom in a range
+#### Create a Date Type Control
+Choose a Date field as Main Date column:
+
+![rocketbi_chart_4](https://user-images.githubusercontent.com/91059979/194491853-dfde6481-3700-4636-9986-a35225b71bb0.png)
+
+Add duplicate variants with different lookup ranges. For example, Year, Monthly, Daily date or Day of Week.
+
+![rocketbi_chart_5](https://user-images.githubusercontent.com/91059979/194492541-f912b16a-9eb0-43fd-a905-2ce42d97e995.png)
+
+Rename filters & Save Control to Dashboard
+
+<img width="200" alt="Screen Shot 2022-10-07 at 14 16 04" src="https://user-images.githubusercontent.com/91059979/194494006-2285e434-3e5b-4160-9886-bc1d1e9980a7.png">
+
+## FEATURE HIGHTLIGHT
+
+Manager User's Attribute to custom the data accessibility to the data level
+
+![Row-level Security](https://user-images.githubusercontent.com/91059979/194751159-fdefb0aa-8ab1-4cc2-98ce-f0828c647c69.png)
+
+
+Drag & zoom in data
+
 <img src={require('./images/rocketbi_dashboard_action_1.png').default} class="image" alt="Zoom in your Chart data" />
 <p/>
 
-Using dynamic controller for metrics & date range to build quicker overview
-<img src={require('./images/rocketbi_dashboard_action_2.png').default} class="image" alt="Dynamic Dashboard Controls" />
-<p/>
+Click & connect relationship to analyze from multiple dataset
+
+![Relationship Builder](https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png)
