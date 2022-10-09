@@ -111,8 +111,8 @@ Manager User's Attribute to custom the data accessibility to the data level
 
 Drag & zoom in data
 
-<img src={require('./images/rocketbi_dashboard_action_1.png').default} class="image" alt="Zoom in your Chart data" />
-<p/>
+![rocketbi_dashboard_action_1](https://user-images.githubusercontent.com/91059979/194751285-ff82f694-88e7-40c3-ab90-fd07adda1b4c.png)
+
 
 Click & connect relationship to analyze from multiple dataset
 
