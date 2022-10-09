@@ -1,5 +1,18 @@
+---
+sidebar_label: Rocket.BI
+sidebar_position: 
+slug: /en/integrations/rocket-bi
+keywords: [clickhouse, rocketbi, connect, integrate, ui]
+description: RocketBI is a self-service Business Intelligence platform that helps you quickly analyze Big Data, do drag-n-drop visualization, and collaborate with colleagues right on your web browser.
+---
 
-RocketBI is a self-service Business Intelligence platform that helps you quickly analyze, drag and drop to visualize Big Data, and collaborate with friends & colleagues right on your web browser.
+<div class="adopters-table">
+
+|Name|Logo|Category|Description|Resources|
+|------|----|----------------|------------------|-------------|
+|Grafana|![rocket_bi](https://user-images.githubusercontent.com/91059979/194752634-99afc83d-6e1b-41e1-91d3-f8a22866b9e7.svg)|Data visualization|With Grafana you can create, explore and share all of your data through dashboards.|[Documentation](../connect-a-ui/grafana-and-clickhouse)|
+</div>
+
 
 # GOAL
 
