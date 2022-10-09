@@ -10,7 +10,7 @@ description: RocketBI is a self-service Business Intelligence platform that help
 
 |Name|Logo|Category|Description|Resources|
 |------|----|----------------|------------------|-------------|
-|Rocket.BI|![rocket_bi](https://user-images.githubusercontent.com/91059979/194752634-99afc83d-6e1b-41e1-91d3-f8a22866b9e7.svg)|Data visualization|RocketBI is a self-service Business Intelligence platform that helps you quickly analyze Big Data, do drag-n-drop visualization, and collaborate with colleagues right on your web browser.|[Documentation](../integrations/rocket-bi)|
+|Rocket.BI|![rocket_bi](https://user-images.githubusercontent.com/91059979/194752634-99afc83d-6e1b-41e1-91d3-f8a22866b9e7.svg)|Data visualization|RocketBI is a self-service Business Intelligence platform that helps you quickly analyze Big Data, do drag-n-drop visualization, and collaborate with colleagues right on your web browser.|[Documentation](../en/integrations/rocket-bi)|
 </div>
 
 
