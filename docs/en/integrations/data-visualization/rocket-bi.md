@@ -18,7 +18,7 @@ description: RocketBI is a self-service Business Intelligence platform that help
 
 In this guide, you will install and build a simple dashboard using Rocket.BI.
 This is the dashboard:
-![github_rocketbi2](https://user-images.githubusercontent.com/91059979/194797668-65eabfb2-9bfb-447f-be24-846b8c797829.gif)
+<img width="800" alt="github_rocketbi2" src="https://user-images.githubusercontent.com/91059979/194797668-65eabfb2-9bfb-447f-be24-846b8c797829.gif">
 
 
 ## INSTALL
@@ -73,14 +73,14 @@ password: 123456
 
 In Dashboard tab, you will find your reportings there, start visualization by clicking +New
 You can build **unlimited dashboards** & draw **unlimited charts** in a dashboard.
-![rocket-bi-create-dashboard](https://user-images.githubusercontent.com/91059979/194797287-c46f63e7-223b-4972-9ed8-4e9f167287f2.gif)
+<img width="800" alt="rocket-bi-create-dashboard" src="https://user-images.githubusercontent.com/91059979/194797287-c46f63e7-223b-4972-9ed8-4e9f167287f2.gif">
 
 
 ### Build the Chart Controls
 
 #### Create a Metrics Control
 In the Tab filter setting, select the metric fields you want to use. Make sure to keep check on aggregation setting.
-![rocketbi_chart_6](https://user-images.githubusercontent.com/91059979/194493404-dd6199bc-2faf-4a73-b72e-a6370dc490f8.png)
+<img width="800" alt="rocketbi_chart_6" src="https://user-images.githubusercontent.com/91059979/194493404-dd6199bc-2faf-4a73-b72e-a6370dc490f8.png">
 
 Rename filters & Save Control to Dashboard <img width="400" alt="Screen Shot 2022-10-07 at 14 15 35" src="https://user-images.githubusercontent.com/91059979/194493738-c085fa53-173b-495a-b654-bffcd092b2e6.png">
 
@@ -88,22 +88,22 @@ Rename filters & Save Control to Dashboard <img width="400" alt="Screen Shot 202
 #### Create a Date Type Control
 Choose a Date field as Main Date column:
 
-![rocketbi_chart_4](https://user-images.githubusercontent.com/91059979/194491853-dfde6481-3700-4636-9986-a35225b71bb0.png)
+<img width="800" alt="rocketbi_chart_4" src="https://user-images.githubusercontent.com/91059979/194491853-dfde6481-3700-4636-9986-a35225b71bb0.png">
 
 Add duplicate variants with different lookup ranges. For example, Year, Monthly, Daily date or Day of Week.
 
-![rocketbi_chart_5](https://user-images.githubusercontent.com/91059979/194492541-f912b16a-9eb0-43fd-a905-2ce42d97e995.png)
+<img width="800" alt="rocketbi_chart_5" src="https://user-images.githubusercontent.com/91059979/194492541-f912b16a-9eb0-43fd-a905-2ce42d97e995.png">
 
 Rename filters & Save Control to Dashboard
 
-<img width="200" alt="Screen Shot 2022-10-07 at 14 16 04" src="https://user-images.githubusercontent.com/91059979/194494006-2285e434-3e5b-4160-9886-bc1d1e9980a7.png">
+<img width="200" alt="Date Range Control" src="https://user-images.githubusercontent.com/91059979/194494006-2285e434-3e5b-4160-9886-bc1d1e9980a7.png">
 
 
 ## FEATURE HIGHTLIGHT
 
 Manager User's Attribute to custom the data accessibility to the data level
 
-![Row-level Security](https://user-images.githubusercontent.com/91059979/194751159-fdefb0aa-8ab1-4cc2-98ce-f0828c647c69.png)
+<img width="800" alt="Row-level Security" src="https://user-images.githubusercontent.com/91059979/194751159-fdefb0aa-8ab1-4cc2-98ce-f0828c647c69.png">
 
 
 Calculated & Measurement Fields in Chart builder to create a dynamic view of data
@@ -113,6 +113,6 @@ Calculated & Measurement Fields in Chart builder to create a dynamic view of dat
 
 Click & connect relationship frome multiple tables, and do cross sources analysis
 
-![Relationship Builder](https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png)
+<img width="800" alt="Relationship Builder" src="https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png">
 
 
