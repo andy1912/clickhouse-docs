@@ -20,6 +20,7 @@ In this guide, you will install and build a simple dashboard using Rocket.BI.
 This is the dashboard:
 <img width="800" alt="github_rocketbi2" src="https://user-images.githubusercontent.com/91059979/194797668-65eabfb2-9bfb-447f-be24-846b8c797829.gif">
 
+You can checkout [the Dashboard via this link.](https://demo.rocket.bi/dashboard/sales-dashboard-7?token=7eecf750-cbde-4c53-8fa8-8b905fec667e)
 
 ## INSTALL
 
@@ -52,7 +53,7 @@ docker-compose up -d
  
 Open the browser and go to localhost:5050 to enter the web UI.
  
-Login to RocketBI with this default account:
+Login to RocketBI with the default account:
 ```
 username: hello@gmail.com
 password: 123456
@@ -100,7 +101,7 @@ Rename filters & Save Control to Dashboard
 <img width="200" alt="Date Range Control" src="https://user-images.githubusercontent.com/91059979/194494006-2285e434-3e5b-4160-9886-bc1d1e9980a7.png">
 
 
-## FEATURE HIGHTLIGHT
+## FEATURES HIGHLIGHT
 
 Manager User's Attribute to custom the data accessibility to the data level
 
@@ -116,3 +117,5 @@ Click & connect relationship frome multiple tables, and do cross sources analysi
 
 <img width="650" alt="Relationship Builder" src="https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png">
 
+Schema Management with Data Encryption
+<img width="650" alt="Schema Management" src="https://user-images.githubusercontent.com/91059979/194801262-c5d31c10-339b-41e0-bed2-65cf0f593bfe.png">
