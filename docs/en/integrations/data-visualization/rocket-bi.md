@@ -107,15 +107,14 @@ Manager User's Attribute to custom the data accessibility to the data level
 
 <img width="650" alt="Row-level Security" src="https://user-images.githubusercontent.com/91059979/194751159-fdefb0aa-8ab1-4cc2-98ce-f0828c647c69.png">
 
-
 Calculated & Measurement Fields in Chart builder to create a dynamic view of data
 
 <img width="650" alt="calculate-measurement-field" src="https://user-images.githubusercontent.com/91059979/194797687-d3fd3b8c-5398-4d4e-af0c-864b759096b7.png">
-
 
 Click & connect relationship frome multiple tables, and do cross sources analysis
 
 <img width="650" alt="Relationship Builder" src="https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png">
 
 Schema Management with Data Encryption
+
 <img width="650" alt="Schema Management" src="https://user-images.githubusercontent.com/91059979/194801262-c5d31c10-339b-41e0-bed2-65cf0f593bfe.png">
