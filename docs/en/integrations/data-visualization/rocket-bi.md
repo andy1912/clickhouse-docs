@@ -20,7 +20,7 @@ In this guide, you will install and build a simple dashboard using Rocket.BI.
 This is the dashboard:
 <img width="800" alt="github_rocketbi2" src="https://user-images.githubusercontent.com/91059979/194797668-65eabfb2-9bfb-447f-be24-846b8c797829.gif">
 
-You can checkout [the Dashboard via this link.](https://demo.rocket.bi/dashboard/sales-dashboard-7?token=7eecf750-cbde-4c53-8fa8-8b905fec667e)
+You can checkout ![the Dashboard via this link.](https://demo.rocket.bi/dashboard/sales-dashboard-7?token=7eecf750-cbde-4c53-8fa8-8b905fec667e)
 
 ## INSTALL
 
@@ -76,7 +76,7 @@ In Dashboard, you will find your reportings, start visualization by clicking +Ne
 You can build **unlimited dashboards** & draw **unlimited charts** in a dashboard.
 
 <img width="800" alt="rocketbi_create_chart" src="https://user-images.githubusercontent.com/91059979/194799689-3ad88958-b7a8-4b3f-a98d-7af8b198d684.gif">
-
+See hi-res tutorial on [Youtube](https://www.youtube.com/watch?v=TMkdMHHfvqY)
 
 ### Build the Chart Controls
 
