@@ -18,8 +18,8 @@ description: RocketBI is a self-service Business Intelligence platform that help
 
 In this guide, you will install and build a simple dashboard using Rocket.BI.
 This is the dashboard:
+![github_rocketbi2](https://user-images.githubusercontent.com/91059979/194797668-65eabfb2-9bfb-447f-be24-846b8c797829.gif)
 
-![rocketbi_chart_1](https://user-images.githubusercontent.com/91059979/194484388-1e74c8cd-64e0-4768-8d78-2ee7a37bba5c.png)
 
 ## INSTALL
 
@@ -65,41 +65,24 @@ password: 123456
 <img width="800" alt="rocketbi_config_1" src="https://user-images.githubusercontent.com/91059979/194485090-46ce0c18-00af-46af-967b-e886df93362e.png">
 
 #### Use Query Analysis to quickly explore data & do ad hoc insight finding:
+<img width="800" alt="Ad hoc Analysis" src="https://user-images.githubusercontent.com/91059979/194798326-4e64b2c8-d127-4ab3-ae6e-6364e6034e15.png">
 
-![rocketbi_analyze_1](https://user-images.githubusercontent.com/91059979/194485149-c8ca745c-2bbc-43bd-b990-f146bd08b15a.png)
-
-#### Or visualize your data through our Chart builder in the Dashboard tab:
-
-![rocketbi_analyze_2](https://user-images.githubusercontent.com/91059979/194485209-d1f4c308-8900-4017-a820-ad6bb9d7d8f1.gif)
+#### Or visualize your data through our Chart builder in the Dashboard tab
 
 ## LET'S BUILD THE DASHBOARD
 
 In Dashboard tab, you will find your reportings there, start visualization by clicking +New
-
-<img width="400" alt="rocketbi_new_chart" src="https://user-images.githubusercontent.com/91059979/194486110-731d2fa6-85ff-4dbc-9849-487dc1ab9d16.png">
-
 You can build **unlimited dashboards** & draw **unlimited charts** in a dashboard.
+![rocket-bi-create-dashboard](https://user-images.githubusercontent.com/91059979/194797287-c46f63e7-223b-4972-9ed8-4e9f167287f2.gif)
 
-### Create the Chart Controls
 
-#### Basic Chart Setting
-If you create a chart in an empty dashboard, hit Click here to start.
-<img width="800" alt="rocketbi_create_chart_1" src="https://user-images.githubusercontent.com/91059979/194486161-9a8e6fdf-b019-4602-b5a0-c63c008c96e0.png">
-
-If you create a chart from a filled dashboard, click Edit in the sidebar menu, then click Adding and select Add chart:
-<img width="400" alt="rocketbi_create_chart_2" src="https://user-images.githubusercontent.com/91059979/194486197-3d216af5-7748-4d0b-ae11-2a604b13bb44.png"> <img width="400" alt="rocketbi_create_chart_3" src="https://user-images.githubusercontent.com/91059979/194486231-452bd640-a320-4942-9a1c-7090ca1d5adf.png">
-
-A selection menu for visualization type will appear. Find and select a Tab filter.
-![rocketbi_chart_2](https://user-images.githubusercontent.com/91059979/194490118-4c876aa8-e3ff-4943-a0c4-edc8cdbc661c.png)
-
+### Build the Chart Controls
 
 #### Create a Metrics Control
 In the Tab filter setting, select the metric fields you want to use. Make sure to keep check on aggregation setting.
 ![rocketbi_chart_6](https://user-images.githubusercontent.com/91059979/194493404-dd6199bc-2faf-4a73-b72e-a6370dc490f8.png)
 
-Rename filters & Save Control to Dashboard
-
-<img width="400" alt="Screen Shot 2022-10-07 at 14 15 35" src="https://user-images.githubusercontent.com/91059979/194493738-c085fa53-173b-495a-b654-bffcd092b2e6.png">
+Rename filters & Save Control to Dashboard <img width="400" alt="Screen Shot 2022-10-07 at 14 15 35" src="https://user-images.githubusercontent.com/91059979/194493738-c085fa53-173b-495a-b654-bffcd092b2e6.png">
 
 
 #### Create a Date Type Control
@@ -115,6 +98,7 @@ Rename filters & Save Control to Dashboard
 
 <img width="200" alt="Screen Shot 2022-10-07 at 14 16 04" src="https://user-images.githubusercontent.com/91059979/194494006-2285e434-3e5b-4160-9886-bc1d1e9980a7.png">
 
+
 ## FEATURE HIGHTLIGHT
 
 Manager User's Attribute to custom the data accessibility to the data level
@@ -122,11 +106,13 @@ Manager User's Attribute to custom the data accessibility to the data level
 ![Row-level Security](https://user-images.githubusercontent.com/91059979/194751159-fdefb0aa-8ab1-4cc2-98ce-f0828c647c69.png)
 
 
-Drag & zoom in data
+Calculated & Measurement Fields in Chart builder to create a dynamic view of data
 
-![rocketbi_dashboard_action_1](https://user-images.githubusercontent.com/91059979/194751285-ff82f694-88e7-40c3-ab90-fd07adda1b4c.png)
+<img width="800" alt="calculate-measurement-field" src="https://user-images.githubusercontent.com/91059979/194797687-d3fd3b8c-5398-4d4e-af0c-864b759096b7.png">
 
 
-Click & connect relationship to analyze from multiple dataset
+Click & connect relationship frome multiple tables, and do cross sources analysis
 
 ![Relationship Builder](https://user-images.githubusercontent.com/91059979/194750965-9f019221-b1a9-4c72-a782-8de5ea9f99f3.png)
+
+
